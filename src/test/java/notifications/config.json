@@ -3,9 +3,9 @@
     "project": "${JOB_BASE_NAME}",
     "environment": "some env",
     "comment": "Hello there!",
-    "reportLink": "https://jenkins.autotests.cloud/job/demoqa-jenkins-tests/13/allure/",
+    "reportLink": "${BUILD_URL}",
     "language": "ru",
-    "allureFolder": "build/allure-report/",
+    "allureFolder": "allure-report",
     "enableChart": true,
     "enableSuitesPublishing": true
   },
