@@ -22,26 +22,12 @@ allure {
 }
 
 dependencies {
-    constraints {
-        add('implementation', 'org.junit.jupiter:junit-jupiter-api') {
-            version { strictly '5.11.3' }
-        }
-        add('implementation', 'org.junit.platform:junit-platform-launcher') {
-            version { strictly '1.11.3' }
-        }
-    }
-
     testImplementation(
             'io.qameta.allure:allure-selenide:2.29.1',
             'org.junit.jupiter:junit-jupiter:5.11.3',
             'org.aspectj:aspectjweaver:1.9.22.1',
             'com.codeborne:selenide:7.5.1'
     )
-}
-
-test {
-    useJUnitPlatform()
-    systemProperties(System.getProperties())
 }
 
 tasks.withType(Test).configureEach {
